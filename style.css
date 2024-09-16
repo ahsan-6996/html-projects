@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+:root{
+    --navbar-height: 59px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+
+#navbar ul{
+    display: flex;
+   
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+#home::before{
+    content: "";
+    background:url(image/bg)no-repeat center center/cover;
+   position: absolute;   
+   
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+.h-primary{
+    font-family: "Protest Guerrilla", sans-serif;
+    font-weight: 400;
+    font-style: 80px;
+    text-align: center;
+
+}
+.h-secondary{
+    font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    
+        font-family: "Protest Guerrilla", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+
+#home p{
+    color: white;
+    text-align: center;
+    
+}
+.btn{
+    padding: 9px 20px;
+    border: 20px;
+    border-radius: 10px;
+    background-color: rgb(31, 22, 22);
+    color: white;
+    margin: 17px;
+    font-size: large;
+cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{ 
+    border: 2px solid rgb(195, 0, 0);
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 28px;
+    background: #f3efef;
+    margin-bottom: 20px;
+}
+
+#services .box img{ 
+   height: 160px;
+   margin: auto;
+   display: block;
+}
+
+#services .box p{
+    font-family: 'Bree Serif', serif;
+
+} 
+ /**client section**/
+
+ #client-section{ 
+    position: relative;
+}
+
+#client-section::before{
+ content: "";
+ position: absolute;
+ background: url(image/bg1);
+ width: 100%;
+ height: 90%;
+ z-index: -1;
+ opacity: 0.3;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item{
+    padding: 34px;
+}
+
+#clients img{
+    height: 124px;
+}
+
+/**contact section**/
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url(image/contact.png) no-repeat center center/cover;
+
+}
+#contact-box input,
+#contact-bpx textarea{
+    width: 100%;
+    padding: 0.5rem;
+border-radius:10px ;
+font-size: 1rem;
+}
+#contact-box form{
+    width: 40%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px ;
+
+}
+
+
+
+
+
+
+
+footer{
+    background: black;
+    color: white;
+}
+
